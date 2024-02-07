@@ -27,8 +27,8 @@ m2_to_hectares = 1e-0
 
 # Set your Sentinel Hub credentials
 config = SHConfig()
-config.sh_client_id = '54321962-392c-4f89-af6a-80dd31b821d3'  # Add your Sentinel Hub instance ID
-config.sh_client_secret = 'yZIoOjkBaKMVDI5oS20cttZxgX0coATm'
+config.sh_client_id = 'your client id'  # Add your Sentinel Hub instance ID
+config.sh_client_secret = 'your client secret'
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
