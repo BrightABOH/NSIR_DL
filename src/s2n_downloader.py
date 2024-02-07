@@ -20,8 +20,8 @@ output_folder = 'croptype'
 
 # Define your Sentinel Hub credentials
 config = SHConfig()
-config.sh_client_id = '3f361dfc-b818-4cf3-bbd3-b28248d86880'
-config.sh_client_secret = 'o[8m:[Jv8[I|?[j^af9a^-WCB:_>a&r0]kQr9A|t'
+config.sh_client_id = 'your client_id'
+config.sh_client_secret = 'your client_secret'
 
 # Set the configuration to allow downloading of data
 # Define your evalscript
