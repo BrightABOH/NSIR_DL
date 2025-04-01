@@ -151,7 +151,7 @@ class CustomDataset(Dataset):
                     torch.tensor([]),  # Return an empty tensor for skipped images
                 )
 
-            # Choose the appropriate input type based on the selected_input_type
+           
             # Choose the appropriate input type based on the selected_input_type
             if "NDVI" in selected_input_type:
                 image = Image.open(img_path.replace("RGB", "NDVI")).convert('L')
@@ -436,7 +436,6 @@ with mlflow.start_run():
 
 ###########################################################################################
 #### Update config file with num_of_classes
-# Add num_classes to the config dictionary
 # Add class_names and num_classes to the config dictionary
     config["class_names"] = class_names
     config["num_classes"] = num_classes
