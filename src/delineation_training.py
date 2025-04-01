@@ -41,7 +41,7 @@ val_jaccard_history = []
 
 
 
-# Custom Dataset for Semantic Segmentation
+
 # Custom Dataset for Semantic Segmentation
 class CustomDataset(Dataset):
     def __init__(self, image_root_dir, mask_root_dir, transform=None, mask_transform=None):
@@ -307,16 +307,7 @@ plt.close()
 
 # Save validation IoU and Jaccard Similarity plots
 plt.figure()
-#plt.plot(range(NUM_EPOCHS), val_iou_history, label="Validation IoU")
-#plt.plot(range(NUM_EPOCHS), val_jaccard_history, label="Validation Jaccard")
-#plt.xlabel("Epoch")
-#plt.ylabel("Value")
-#plt.legend()
-#plt.title("Validation IoU and Jaccard Similarity")
 
-# Save the plot in the "plots" folder
-#plt.savefig(os.path.join("plots", "iou_jaccard_final.png"))
-#plt.close()
 
 
 
